@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+    <style>
+        body{
+            background-color: rgb(132, 255, 16);
+            color: red;
+        }
+        h1{ 
+            color: rgb(1, 230, 20);
+            font-size: 50pt;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>DOM em JS</h1>
+    <p>JS né vida</p> 
+    <p>TESTANDO DOM</p>
+    <div id="casa">Iniciando estudos com o <strong>DOM</strong></div>
+    <script>
+        var c1 = document.body
+        c1.style.backgroundColor = "black"
+        var nome = document.getElementsByTagName('h1')[0]
+        nome.innerText = "Mudando o H1"
+        //var ms1 = document.getElementById('casa')
+        //ms1.innerText= "Mudando por ID"
+        var ms2 = document.querySelector('div#casa')
+        ms2.innerText= "Mudand00o por ID"
+
+    </script>
+</body>
+</html>
